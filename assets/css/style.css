@@ -28,6 +28,7 @@
     text-decoration: none;
     list-style-type: none;
     font-family: "Poppins", sans-serif;
+    color: var(--text-white);
 }
 
 /* Navbar */
@@ -428,4 +429,43 @@ main {
     color: var(--text-white);
     border-radius: 10px;
     cursor: pointer;
+}
+
+/* Menu Hamburgesa */
+#menu-toggle,
+#cart-toggle,
+.menu-label {
+    display: none;
+}
+
+/* Carrito */
+.cart {
+    position: absolute;
+    top: 65px;
+    right: 0;
+    padding: 50px 30px;
+    border-left: 1px solid var(--nav-bg);
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    height: calc(100vh - 65px);
+    overflow-y: scroll;
+    display: none;
+    z-index: 2;
+    border-radius: 10px;
+    background: linear-gradient(to top, #121e3c, var(--background));
+}
+
+.cart::-webkit-scrollbar {
+    display: none;
+}
+
+.cart h2 {
+    color: var(--text-white);
+    font-size: 20px;
+    font-weight: 600;
+}
+
+#cart-toggle:checked + .cart {
+    display: flex;
 }

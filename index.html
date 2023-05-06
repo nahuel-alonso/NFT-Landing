@@ -13,6 +13,13 @@
     <header>
         <img class="logo" src="assets/img/logo.png" alt="Logo de NUCBA" />
         <nav class="navbar">
+            <!-- Menu Hamburgesa -->
+            <label for="menu-toggle" class="menu-label">
+                <img src="assets/img/menu.png" alt="menu.icon">
+            </label>
+            <!-- Agregamos el input y lo linkeamos al label -->
+            <input type="checkbox" id="menu-toggle" />
+            <!-- Aca es donde arranca el menu -->
             <ul class="navbar-list">
                 <li><a href="#">Home</a></li>
                 <li><a href="#">Descubre</a></li>
@@ -20,7 +27,85 @@
                 <li><a href="#">YouTube</a></li>
                 <li><a href="#">Contáctanos</a></li>
             </ul>
-            <img class="card-icon" src="assets/img/cart-icon.svg" alt="Carrito de compras" />
+            <label for="cart-toggle" class="cart-label">
+                <img class="card-icon" src="assets/img/cart-icon.svg" alt="Carrito de compras" />
+            </label>
+            <input type="checkbox" id="cart-toggle" />
+            <!-- Agregamos el carrito -->
+            <div class="cart">
+                <h2>Tus NFTs</h2>
+                <div class="cart-item">
+                    <img src="assets/img/cart/cart-img.png" alt="nft del carrito" />
+                    <div class="item-info">
+                        <h3 class="item-title">Messi</h3>
+                        <p class="item-bid">Current bid</p>
+                        <span class="item-price">4.8 ETH
+                        </span>
+                    </div>
+                    <div class="item-handler">
+                        <span class="quantity-handler down">-</span>
+                        <span class="item-quantity">1</span>
+                        <span class="quantity-handler up">+</span>
+                    </div>
+                </div>
+                <!-- Otros productos -->
+                <div class="cart-item">
+                    <img src="assets/img/cart/cart-img.png" alt="nft del carrito" />
+                    <div class="item-info">
+                        <h3 class="item-title">Messi</h3>
+                        <p class="item-bid">Current bid</p>
+                        <span class="item-price">4.8 ETH
+                        </span>
+                    </div>
+                    <div class="item-handler">
+                        <span class="quantity-handler down">-</span>
+                        <span class="item-quantity">1</span>
+                        <span class="quantity-handler up">+</span>
+                    </div>
+                </div>
+                <div class="cart-item">
+                    <img src="assets/img/cart/cart-img.png" alt="nft del carrito" />
+                    <div class="item-info">
+                        <h3 class="item-title">Messi</h3>
+                        <p class="item-bid">Current bid</p>
+                        <span class="item-price">4.8 ETH
+                        </span>
+                    </div>
+                    <div class="item-handler">
+                        <span class="quantity-handler down">-</span>
+                        <span class="item-quantity">1</span>
+                        <span class="quantity-handler up">+</span>
+                    </div>
+                </div>
+                <div class="cart-item">
+                    <img src="assets/img/cart/cart-img.png" alt="nft del carrito" />
+                    <div class="item-info">
+                        <h3 class="item-title">Messi</h3>
+                        <p class="item-bid">Current bid</p>
+                        <span class="item-price">4.8 ETH
+                        </span>
+                    </div>
+                    <div class="item-handler">
+                        <span class="quantity-handler down">-</span>
+                        <span class="item-quantity">1</span>
+                        <span class="quantity-handler up">+</span>
+                    </div>
+                </div>
+                <div class="cart-item">
+                    <img src="assets/img/cart/cart-img.png" alt="nft del carrito" />
+                    <div class="item-info">
+                        <h3 class="item-title">Messi</h3>
+                        <p class="item-bid">Current bid</p>
+                        <span class="item-price">4.8 ETH
+                        </span>
+                    </div>
+                    <div class="item-handler">
+                        <span class="quantity-handler down">-</span>
+                        <span class="item-quantity">1</span>
+                        <span class="quantity-handler up">+</span>
+                    </div>
+                </div>
+            </div>
         </nav>
     </header>
     <main>
@@ -113,7 +198,6 @@
                 <button class="category">🚗Autos</button>
                 <button class="category">💼Políticos</button>
             </div>
-
             <!-- Products -->
             <div class="products-container">
                 <!-- Producto 1 -->
@@ -125,7 +209,6 @@
                             <h3>Golden Messi</h3>
                             <p>Current Bid</p>
                         </div>
-
                         <!-- Mid -->
                         <div class="product-mid">
                             <div class="product-user">
@@ -134,7 +217,6 @@
                             </div>
                             <span>6.89 ETH</span>
                         </div>
-
                         <!-- Bot -->
                         <div class="product-bot">
                             <div class="offer-time">
@@ -143,11 +225,139 @@
                             </div>
                             <button class="btn-add">Add</button>
                         </div>
-
+                    </div>
+                </div>
+                <div class="product">
+                    <img src="./assets/img/products/cutemonkey.png" alt="goldenmessi" />
+                    <div class="product-info">
+                        <!-- Top -->
+                        <div class="product-top">
+                            <h3>Golden Messi</h3>
+                            <p>Current Bid</p>
+                        </div>
+                        <!-- Mid -->
+                        <div class="product-mid">
+                            <div class="product-user">
+                                <img src="./assets/img/user.png" alt="user" />
+                                <p>@thetroncous</p>
+                            </div>
+                            <span>6.89 ETH</span>
+                        </div>
+                        <!-- Bot -->
+                        <div class="product-bot">
+                            <div class="offer-time">
+                                <img src="./assets/img/fire.png " alt="fire" />
+                                <p>05:12:07</p>
+                            </div>
+                            <button class="btn-add">Add</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="product">
+                    <img src="./assets/img/products/cuteshiba.png" alt="goldenmessi" />
+                    <div class="product-info">
+                        <!-- Top -->
+                        <div class="product-top">
+                            <h3>Golden Messi</h3>
+                            <p>Current Bid</p>
+                        </div>
+                        <!-- Mid -->
+                        <div class="product-mid">
+                            <div class="product-user">
+                                <img src="./assets/img/user.png" alt="user" />
+                                <p>@thetroncous</p>
+                            </div>
+                            <span>6.89 ETH</span>
+                        </div>
+                        <!-- Bot -->
+                        <div class="product-bot">
+                            <div class="offer-time">
+                                <img src="./assets/img/fire.png " alt="fire" />
+                                <p>05:12:07</p>
+                            </div>
+                            <button class="btn-add">Add</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="product">
+                    <img src="./assets/img/products/fangster.png" alt="maradona" />
+                    <div class="product-info">
+                        <!-- Top -->
+                        <div class="product-top">
+                            <h3>Maradona</h3>
+                            <p>Current Bid</p>
+                        </div>
+                        <!-- Mid -->
+                        <div class="product-mid">
+                            <div class="product-user">
+                                <img src="./assets/img/user.png" alt="user" />
+                                <p>@thetroncous</p>
+                            </div>
+                            <span>6.89 ETH</span>
+                        </div>
+                        <!-- Bot -->
+                        <div class="product-bot">
+                            <div class="offer-time">
+                                <img src="./assets/img/fire.png " alt="fire" />
+                                <p>05:12:07</p>
+                            </div>
+                            <button class="btn-add">Add</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="product">
+                    <img src="./assets/img/products/sherbet.png" alt="messi" />
+                    <div class="product-info">
+                        <!-- Top -->
+                        <div class="product-top">
+                            <h3>Messi</h3>
+                            <p>Current Bid</p>
+                        </div>
+                        <!-- Mid -->
+                        <div class="product-mid">
+                            <div class="product-user">
+                                <img src="./assets/img/user.png" alt="user" />
+                                <p>@thetroncous</p>
+                            </div>
+                            <span>6.89 ETH</span>
+                        </div>
+                        <!-- Bot -->
+                        <div class="product-bot">
+                            <div class="offer-time">
+                                <img src="./assets/img/fire.png " alt="fire" />
+                                <p>05:12:07</p>
+                            </div>
+                            <button class="btn-add">Add</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="product">
+                    <img src="./assets/img/products/toretto.png" alt="toretto" />
+                    <div class="product-info">
+                        <!-- Top -->
+                        <div class="product-top">
+                            <h3>Toretto</h3>
+                            <p>Current Bid</p>
+                        </div>
+                        <!-- Mid -->
+                        <div class="product-mid">
+                            <div class="product-user">
+                                <img src="./assets/img/user.png" alt="user" />
+                                <p>@thetroncous</p>
+                            </div>
+                            <span>6.89 ETH</span>
+                        </div>
+                        <!-- Bot -->
+                        <div class="product-bot">
+                            <div class="offer-time">
+                                <img src="./assets/img/fire.png " alt="fire" />
+                                <p>05:12:07</p>
+                            </div>
+                            <button class="btn-add">Add</button>
+                        </div>
                     </div>
                 </div>
             </div>
-
         </section>
     </main>
 </body>
