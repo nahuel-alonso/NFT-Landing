@@ -469,3 +469,13 @@ main {
 #cart-toggle:checked + .cart {
     display: flex;
 }
+
+.item-handler {
+    background: var(--primary);
+    border-radius: 10px;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 10px;
+}
